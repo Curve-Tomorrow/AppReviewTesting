@@ -1,0 +1,7 @@
+{
+  "name": "AppReviewTesting",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
