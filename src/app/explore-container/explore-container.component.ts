@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { AppReview } from '@awesome-cordova-plugins/app-review/ngx';
 
 @Component({
   selector: 'app-explore-container',
@@ -7,6 +8,13 @@ import { Component, Input } from '@angular/core';
 })
 export class ExploreContainerComponent {
 
+  constructor(private appReview: AppReview) {}
+
   @Input() name?: string;
 
+  promptReview() {
+    this.appReview.requestReview().catch(() => {
+      return this.appReview.openStoreScreen();
+    });
+  }
 }
