@@ -25,6 +25,7 @@
     "@awesome-cordova-plugins/in-app-browser": "^6.4.0",
     "@ionic/angular": "^7.0.0",
     "@ionic/cordova-builders": "^10.0.0",
+    "cordova-android": "12.0.1",
     "cordova-ios": "7.0.1",
     "ionicons": "^7.0.0",
     "rxjs": "~7.8.0",
@@ -82,7 +83,8 @@
       "cordova-plugin-inappbrowser": {}
     },
     "platforms": [
-      "ios"
+      "ios",
+      "android"
     ]
   }
 }
